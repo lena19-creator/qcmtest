@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deux siècles d'électricité</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 20px;
+
+        }
+
+
+
+        label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        button {
+
+            margin-top: 20px;
+
+            padding: 10px;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<script>
+
+    function calculateScore() {
+
+        const totalQuestions = 20;
+
+        let correctAnswers = 0;
+
+
+
+        for (let i = 1; i <= totalQuestions; i++) {
+
+            const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+
+
+
+            if (selectedAnswer && selectedAnswer.value === correctAnswersList[i - 1]) {
+
+                correctAnswers++;
+
+            }
+
+        }
+
+
+
+        alert(`Votre score : ${correctAnswers} sur 20`);
+
+    }
+
+
+
+    const correctAnswersList = ['b', 'b', 'a', 'd', 'c', 'a', 'a', 'a', 'c', 'b', 'd', 'a', 'd', 'a', 'c', 'b', 'd', 'a', 'a', 'c'];
+
+
+
+</script>
+
+
+
+<h1>Deux siècles d'électricité</h1>
+
+
+
+<form>
+
+    <fieldset>
+
+        <legend>1. Quel phénomène est exploité par les alternateurs électriques pour convertir l'énergie mécanique en énergie électrique ?</legend>
+
+        <label><input type="radio" name="q1" value="a"> a) La conduction électrique</label>
+
+        <label><input type="radio" name="q1" value="b"> b) L'induction électromagnétique</label>
+
+        <label><input type="radio" name="q1" value="c"> c) L'effet photoélectrique</label>
+
+        <label><input type="radio" name="q1" value="d"> d) La résistance thermique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>2. Quel élément d'un alternateur est fixe et ne bouge pas lors de son fonctionnement ?</legend>
+
+        <label><input type="radio" name="q2" value="a"> a) Le rotor</label>
+
+        <label><input type="radio" name="q2" value="b"> b) Le stator</label>
+
+        <label><input type="radio" name="q2" value="c"> c) L'aimant</label>
+
+        <label><input type="radio" name="q2" value="d"> d) La bobine</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>3. Comment se définit le rendement d'un alternateur ?</legend>
+
+        <label><input type="radio" name="q3" value="a"> a) η = Pélectrique / Pmécanique</label>
+
+        <label><input type="radio" name="q3" value="b"> b) η = Pmécanique / Pélectrique</label>
+
+        <label><input type="radio" name="q3" value="c"> c) η = Δt / Pmécanique</label>
+
+        <label><input type="radio" name="q3" value="d"> d) η = Pmécanique × Pélectrique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>4. Quelle grandeur est proportionnelle à la puissance électrique délivrée par un alternateur ?</legend>
+
+        <label><input type="radio" name="q4" value="a"> a) L'énergie</label>
+
+        <label><input type="radio" name="q4" value="b"> b) La tension</label>
+
+        <label><input type="radio" name="q4" value="c"> c) Le temps</label>
+
+        <label><input type="radio" name="q4" value="d"> d) La puissance mécanique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>5. Quelle est la principale propriété des cellules photovoltaïques ?</legend>
+
+        <label><input type="radio" name="q5" value="a"> a) L'induction électromagnétique</label>
+
+        <label><input type="radio" name="q5" value="b"> b) La conduction électrique</label>
+
+        <label><input type="radio" name="q5" value="c"> c) La conversion photovoltaïque</label>
+
+        <label><input type="radio" name="q5" value="d"> d) L'effet photoélectrique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>6. Qu'est-ce que les spectres atomiques permettent de déterminer ?</legend>
+
+        <label><input type="radio" name="q6" value="a"> a) La conductivité électrique</label>
+
+        <label><input type="radio" name="q6" value="b"> b) Les transitions énergétiques</label>
+
+        <label><input type="radio" name="q6" value="c"> c) La puissance lumineuse</label>
+
+        <label><input type="radio" name="q6" value="d"> d) Les propriétés thermiques</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>7. Quelle est la caractéristique I= f(U) d'une cellule photovoltaïque ?</legend>
+
+        <label><input type="radio" name="q7" value="a"> a) La tension maximale</label>
+
+        <label><input type="radio" name="q7" value="b"> b) La résistance électrique</label>
+
+        <label><input type="radio" name="q7" value="c"> c) L'intensité électrique</label>
+
+        <label><input type="radio" name="q7" value="d"> d) La puissance électrique maximale</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>8. Comment sont exprimées les énergies des niveaux d'énergie électroniques en physique atomique ?</legend>
+
+        <label><input type="radio" name="q8" value="a"> a) En volts</label>
+
+        <label><input type="radio" name="q8" value="b"> b) En joules</label>
+
+        <label><input type="radio" name="q8" value="c"> c) Sur une bande de conduction</label>
+
+        <label><input type="radio" name="q8" value="d"> d) Sous forme de spectres atomiques</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>9. Qu'est-ce qui détermine si un matériau agit comme un isolant ou comme un conducteur électrique ?</legend>
+
+        <label><input type="radio" name="q9" value="a"> a) La densité</label>
+
+        <label><input type="radio" name="q9" value="b"> b) Les raies d'absorption</label>
+
+        <label><input type="radio" name="q9" value="c"> c) La bande interdite</label>
+
+        <label><input type="radio" name="q9" value="d"> d) Le spectre solaire</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>10. Quel type de matériau est caractérisé par une bande interdite trop importante pour permettre la conduction électrique ?</legend>
+
+        <label><input type="radio" name="q10" value="a"> a) Matériau conducteur</label>
+
+        <label><input type="radio" name="q10" value="b"> b) Matériau isolant électrique</label>
+
+        <label><input type="radio" name="q10" value="c"> c) Matériau semi-conducteur</label>
+
+        <label><input type="radio" name="q10" value="d"> d) Matériau magnétique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>11. Que se passe-t-il dans un matériau semi-conducteur lorsque son gap est faible et qu'on lui transmet de l'énergie ?</legend>
+
+        <label><input type="radio" name="q11" value="a"> a) Il devient un matériau isolant</label>
+
+        <label><input type="radio" name="q11" value="b"> b) Il devient un matériau conducteur</label>
+
+        <label><input type="radio" name="q11" value="c"> c) Il devient magnétique</label>
+
+        <label><input type="radio" name="q11" value="d"> d) Il devient transparent</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>12. Que représente la bande de conduction d'un semi-conducteur ?</legend>
+
+        <label><input type="radio" name="q12" value="a"> a) Les électrons de plus basse énergie</label>
+
+        <label><input type="radio" name="q12" value="b"> b) Les électrons excités</label>
+
+        <label><input type="radio" name="q12" value="c"> c) La bande interdite</label>
+
+        <label><input type="radio" name="q12" value="d"> d) Les électrons dans leur état fondamental</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>13. Comment les cellules photovoltaïques convertissent-elles l'énergie lumineuse en énergie électrique ?</legend>
+
+        <label><input type="radio" name="q13" value="a"> a) Par conduction électrique</label>
+
+        <label><input type="radio" name="q13" value="b"> b) Par induction électromagnétique</label>
+
+        <label><input type="radio" name="q13" value="c"> c) Par conversion photovoltaïque</label>
+
+        <label><input type="radio" name="q13" value="d"> d) Par résistance thermique</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>14. Qu'est-ce que la caractéristique I= f(U) d'une cellule photovoltaïque permet de déterminer ?</legend>
+
+        <label><input type="radio" name="q14" value="a"> a) La tension maximale</label>
+
+        <label><input type="radio" name="q14" value="b"> b) La résistance électrique</label>
+
+        <label><input type="radio" name="q14" value="c"> c) La puissance lumineuse</label>
+
+        <label><input type="radio" name="q14" value="d"> d) La puissance électrique maximale</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>15. Quelle est la formule donnant la puissance électrique fournie par une cellule photovoltaïque ?</legend>
+
+        <label><input type="radio" name="q15" value="a"> a) P(W) = U(V) × I(A)</label>
+
+        <label><input type="radio" name="q15" value="b"> b) P(W) = U(V) / I(A)</label>
+
+        <label><input type="radio" name="q15" value="c"> c) P(W) = R(Ω) × I(A)</label>
+
+        <label><input type="radio" name="q15" value="d"> d) P(W) = U(V) + I(A)</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>16. Pour maximiser la puissance électrique d'une cellule photovoltaïque, que doit-on faire ?</legend>
+
+        <label><input type="radio" name="q16" value="a"> a) Augmenter la résistance d'utilisation</label>
+
+        <label><input type="radio" name="q16" value="b"> b) Diminuer la tension aux bornes</label>
+
+        <label><input type="radio" name="q16" value="c"> c) Augmenter l'intensité électrique</label>
+
+        <label><input type="radio" name="q16" value="d"> d) Ajuster la résistance externe</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>17. Comment est calculée la résistance d'utilisation maximisant la puissance électrique délivrée par une cellule photovoltaïque ?</legend>
+
+        <label><input type="radio" name="q17" value="a"> a) R = I2 / Pmax</label>
+
+        <label><input type="radio" name="q17" value="b"> b) R = Pmax / Umax</label>
+
+        <label><input type="radio" name="q17" value="c"> c) R = Umax / I2</label>
+
+        <label><input type="radio" name="q17" value="d"> d) R = Pmax / I2</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>18. Quelle est la formule permettant de calculer la résistance d'utilisation maximisant la puissance électrique délivrée par une cellule photovoltaïque ?</legend>
+
+        <label><input type="radio" name="q18" value="a"> a) R = Umax / Imax</label>
+
+        <label><input type="radio" name="q18" value="b"> b) R = Pmax / Imax</label>
+
+        <label><input type="radio" name="q18" value="c"> c) R = Imax / Pmax</label>
+
+        <label><input type="radio" name="q18" value="d"> d) R = Imax / Umax</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>19. Comment se calcule le rendement d'un capteur photovoltaïque ?</legend>
+
+        <label><input type="radio" name="q19" value="a"> a) η = Plumineuse / Pélectrique</label>
+
+        <label><input type="radio" name="q19" value="b"> b) η = Pélectrique / Plumineuse</label>
+
+        <label><input type="radio" name="q19" value="c"> c) η = Pmax / Pabsorbée</label>
+
+        <label><input type="radio" name="q19" value="d"> d) η = Pabsorbée / Pmax</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+
+        <legend>20. On distingue: </legend>
+
+        <label><input type="radio" name="q20" value="a"> a) Les états excités d'énergie supérieure </label>
+
+        <label><input type="radio" name="q20" value="b"> b) Les états excités d'énergie égale </label>
+
+        <label><input type="radio" name="q20" value="c"> c) L'état fondamental d'un atome, qui correspond à son état d'énergie minimale, dans lequel l'atome possède la stabilité maximale </label>
+
+        <label><input type="radio" name="q20" value="d"> d) Les états excités d'énergie inférieure</label>
+
+    </fieldset>
+
+
+
+    <button type="button" onclick="calculateScore()">Calculer le score</button>
+
+</form>
+
+
+
+</body>
+
+</html>
